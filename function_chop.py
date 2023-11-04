@@ -12,7 +12,7 @@ def chop(t):
 
 
 def middle(t):
-    return t[:]
+    return t[:] 
 
 # Prompt the user for list input:
 list_input = input('Enter the values of the list to be chopped and middled separated by spaces: ')
@@ -24,9 +24,15 @@ splitted_input = list_input.split()
 # Convert the number strings to interger to create the list
 lista = [int(num) for num in splitted_input]
 
-print('The list is: ', lista)
-chopped_lista = chop(lista)
-print('The chopped list is: ', chopped_lista)
 
-middled_lista = middle(lista)
+
+print('The list is: ', lista)           #prints the original list
+
+
+# runs the function chop and assigns the resuls to a new var.
+chopped_lista = chop(lista) 
+print('The chopped list is: ', chopped_lista)       
+
+# Runs the function middle and prints the results
+middled_lista = middle(lista)               
 print('the list after middling is: ', middled_lista)
